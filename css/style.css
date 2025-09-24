@@ -924,37 +924,36 @@ footer {
   position: relative;
   z-index: 1;
 }
-
-/* さらに右へ寄せたい時は数値を増やすだけ */
+/* ===== Access maps: Grid で2カラム ===== */
 .access-maps-calendar{
-  display:grid;
-  gap:16px;
-}
-@media (min-width: 880px){
-  .access-maps-calendar{
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.access-maps-calendar {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;   /* モバイルは1列 */
   gap: 20px;
   margin-top: 1rem;
 }
 
-.access-maps-calendar .map-box {
-  flex: 1 1 45%;   /* 横に2枚並べる */
-  min-width: 300px;
+@media (min-width: 880px){
+  .access-maps-calendar{
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* PCは2列 */
+    align-items: start;
+  }
 }
 
-.access-maps-calendar .map-box iframe {
+.access-maps-calendar .map-box h4{
+  margin: 0 0 .5rem;
+}
+
+.access-maps-calendar .map-box iframe{
   width: 100%;
-  height: 320px;   /* 好きな高さに調整 */
+  aspect-ratio: 16 / 9;   /* 高さを自動で比率維持 */
+  height: auto;
   border: 0;
 }
-/* 余白調整 for PC/スマホ */
-@media (max-width: 700px) {
-  .map-box, .calendar-box { max-width: 100%; }
-  .calendar-title { font-size: 1.3rem; }
+
+.access-maps-calendar .map-link{
+  margin-top: .4rem;
+  font-size: .95rem;
 }
+
+
 
