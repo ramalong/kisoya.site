@@ -1,0 +1,7 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="60" r="55" fill="#6b9dc0" opacity="0.2"/>
+  <circle cx="60" cy="60" r="45" fill="#6b9dc0" opacity="0.5"/>
+  <path d="M60 25C40.67 25 25 40.67 25 60C25 79.33 40.67 95 60 95C79.33 95 95 79.33 95 60C95 40.67 79.33 25 60 25ZM60 85C46.19 85 35 73.81 35 60C35 46.19 46.19 35 60 35C73.81 35 85 46.19 85 60C85 73.81 73.81 85 60 85Z" fill="#6b9dc0"/>
+  <path d="M60 45C51.72 45 45 51.72 45 60C45 68.28 51.72 75 60 75C68.28 75 75 68.28 75 60C75 51.72 68.28 45 60 45Z" fill="#e88c7d"/>
+  <text x="60" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">基礎屋</text>
+</svg>
