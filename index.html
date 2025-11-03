@@ -2,13 +2,20 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>心理教育相談室 基礎屋｜浜松市の心理相談・不登校支援・学習支援</title>
   <meta name="description" content="浜松市の心理教育相談室 基礎屋では、公認心理師監修の心理相談・不登校支援・発達障害サポート・学習支援でお子様とご家族を支えます。" />
   <meta name="keywords" content="浜松市,心理相談,基礎屋,不登校支援,発達障害,学習支援,表現活動" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <!-- Favicon 基本 -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icon01.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/icon01.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icon01.png">
+  <!-- PWA（マスク対応） -->
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#2A6B6B">
 </head>
 <body>
   <header>
@@ -19,31 +26,29 @@
       </div>
       <nav>
         <button class="hamburger" aria-label="メニュー開閉">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
         <ul class="nav-menu">
           <li><a href="#home">ホーム</a></li>
           <li><a href="#about">基礎屋について</a></li>
-          <li><a href="#activities">活動内容</a></li>
-          <li><a href="#services">サービス詳細</a></li>
+          <li><a href="#services">活動内容</a></li>
           <li><a href="#access">アクセス</a></li>
-          <li><a href="#contact">お問い合わせ</a></li>
+          <li><a href="#contact-direct">お問い合わせ</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- Hero -->
     <section id="home" class="hero">
       <div class="container">
         <div class="hero-content">
           <h2>あなたの心と学びを支える空間</h2>
           <p>心理教育相談室 基礎屋では、お一人おひとりに寄り添った心理相談や学習支援を行っています。</p>
           <div class="cta-buttons">
-            <a href="#activities" class="btn btn-primary">活動内容を見る</a>
-            <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
+            <a href="#services" class="btn btn-primary">活動内容を見る</a>
+            <a href="#contact-direct" class="btn btn-secondary">お問い合わせ</a>
           </div>
         </div>
       </div>
@@ -52,8 +57,9 @@
       </div>
     </section>
 
+    <!-- About -->
     <section id="about" class="about">
-      <div class="container"><br />
+      <div class="container">
         <h2 class="section-title">基礎屋について</h2>
         <p>
           心理教育相談室 基礎屋は「カウンセリング」、「学習支援」、「表現活動」を三本柱とする支援施設です。臨床心理士、公認心理師が在籍しており、学力不振、発達障害や不登校等、子どもたちや保護者の困り感に寄り添う支援を行っています。
@@ -61,11 +67,12 @@
       </div>
     </section>
 
+    <!-- Staff -->
     <section id="staff" class="staff">
-      <div class="container"><br />
+      <div class="container">
         <h2 class="section-title">スタッフ紹介</h2>
 
-               <!-- 代表（詳細を追記） -->
+        <!-- 代表 -->
         <div class="service-category">
           <h3><i class="fas fa-user"></i> 代表</h3>
           <p><strong>伊藤 真一</strong></p>
@@ -78,7 +85,7 @@
           </ul>
         </div>
 
-                <!-- 追加スタッフ -->
+        <!-- 追加スタッフ -->
         <div class="service-category">
           <h3><i class="fas fa-user"></i> 指導員（絵画・アート／習字）</h3>
           <p><strong>かずこ 指導員</strong></p>
@@ -86,7 +93,7 @@
             <li>浜松市出身</li>
             <li>職歴：イラストレーター</li>
             <li>所属学会：日本心理臨床学会／日本描画テスト・描画療法学会</li>
-            <li>資格：公認心理師／認定描画療法士／高等学校教諭免許（理科）／（財）日本習字　五段　（教授免許）</li>
+            <li>資格：公認心理師／認定描画療法士／高等学校教諭免許（理科）／（財）日本習字 五段（教授免許）</li>
           </ul>
         </div>
 
@@ -111,7 +118,7 @@
           </ul>
         </div>
 
-        <!-- スタッフ概要 -->
+        <!-- スタッフ体制 -->
         <div class="service-category">
           <h3><i class="fas fa-user-friends"></i> スタッフ体制</h3>
           <p>総勢 <strong>11名</strong>（臨床心理士1名、公認心理師4名，特別支援教育士2名，描画療法士1名 他）</p>
@@ -119,11 +126,13 @@
       </div>
     </section>
 
+    <!-- Services -->
     <section id="services" class="services-detail">
       <div class="container">
-        <h2 class="section-title">サービス詳細</h2>
+        <h2 class="section-title">活動内容</h2>
         <p>以下の各サービスは、ご家族の状況やお子様の特性に応じて組み合わせてご利用いただけます。</p>
 
+        <!-- 心理教育相談 -->
         <div class="service-category">
           <h3><i class="fas fa-heart"></i> 心理教育相談</h3>
 
@@ -166,20 +175,20 @@
             </p>
           </div>
 
-          <!-- <div class="flow-chart"><br>
+          <!--
+          <div class="flow-chart">
             <h3 class="section-title">心理相談の流れ</h3>
             <img src="images/IMG_3577.png" alt="心理相談の流れ図：申込→初回面接→継続面接→終了">
-          </div> -->
+          </div>
+          -->
 
           <div class="service-partner">
-            <br />
             <h4>連携機関</h4>
-            <br />
             <p>
               <strong class="highlight-blue">カウンセリングルーム 入野心理教育相談室</strong><br /><br />
-              総合病院やスクールカウンセラー、児童相談所などでの、三十年以上の臨床経験のある臨床心理士・公認心理師が、<br />
+              総合病院やスクールカウンセラー、児童相談所などでの、三十年以上の臨床経験のある臨床心理士・公認心理師が、
               じっくりと内的世界を探究していけるような、力動的心理療法を行っています。<br />
-              悩みやニーズ、抱えている想い、人生のプランも一人一人皆さざまな在り方があると思っています。<br />
+              悩みやニーズ、抱えている想い、人生のプランも一人一人様々な在り方があると思っています。<br />
               決まったやり方に当てはめるよりも、できる限りお一人お一人の状況に合わせ、オーダー・メイドのカウンセリングにしていけることを目指しています。<br />
               <a href="https://irinoshinrisoudanshitsu.jimdofree.com/" target="_blank" rel="noopener noreferrer">入野心理教育相談室（外部リンク）</a><br />
               <em>2025.7.3 更新</em>
@@ -187,6 +196,7 @@
           </div>
         </div>
 
+        <!-- 学習支援 -->
         <div class="service-category">
           <h3><i class="fas fa-book"></i> 学習支援</h3>
 
@@ -216,8 +226,6 @@
             </div>
           </div>
 
-          <br />
-
           <div class="pricing-item">
             <div class="wrap">
               <h4>詳細情報</h4>
@@ -235,18 +243,18 @@
                 <dd>基礎の取り戻しから学校課題のフォロー、学び直しまで幅広く対応。</dd>
               </dl>
 
-              <br />
               <h3>このような学習の悩みにも対応しています</h3>
-                <ul class="support-list">
-                    <li>学力不振</li>
-                    <li>不登校（フリースクールとして利用可）</li>
-                    <li>就学前の学習療育支援</li>
-                    <li>発達障害や特定の苦手への対応</li>
-                </ul>
+              <ul class="support-list">
+                <li>学力不振</li>
+                <li>不登校（フリースクールとして利用可）</li>
+                <li>就学前の学習療育支援</li>
+                <li>発達障害や特定の苦手への対応</li>
+              </ul>
             </div>
           </div>
         </div>
 
+        <!-- 表現支援 -->
         <div class="service-category">
           <h3><i class="fas fa-paint-brush"></i> 表現支援</h3>
           <div class="expression-services">
@@ -254,13 +262,16 @@
               <h4>絵画教室</h4>
               <p class="price">月4回 5,400円</p>
               <p class="affiliation">所属：日本描画テスト描画療法学会</p>
-              <p class="affiliation">絵画や工作をしています。アートセラピーのエッセンスが含まれた自由で楽しい表現活動をモットーに活動しています。</p>
+              <p class="affiliation">内容：デッサンの基礎の指導、総合選抜型入試の対策のサポート。</p>
+              <p class="affiliation">安心・安全で否定されない体験をゆっくり積んでいく場所です。描く・作るなどの制作活動を通して「表現する」ことを目指します。
+美術系大学受験のご相談にも対応します。</p>
             </div>
             <div class="expression-service">
               <h4>習字教室</h4>
               <p class="price">月4回 4,000円</p>
               <p class="affiliation">所属：（財）日本習字</p>
-              <p class="affiliation">段級位認定が受けられます。段級なしで楽しくお習字をするだけでもＯＫです。</p>
+              <p class="affiliation">ゆるゆる楽しくお習字をする場所です。日本習字に入会すると段級位の認定を受けられます。
+</p>
             </div>
           </div>
         </div>
@@ -344,7 +355,7 @@
     <!-- 地図２枚 -->
 <div class="access-maps-calendar">
   <div class="map-box">
-    <h4>冨塚ルーム</h4>
+    <h4>富塚ルーム</h4>
     <iframe
       src="https://www.google.com/maps?q=%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%AF%8C%E5%A1%9A%E7%94%BA2961-8&output=embed"
       allowfullscreen
@@ -353,7 +364,7 @@
     </iframe>
     <p class="map-link">
       <a href="https://maps.app.goo.gl/keHCq3jYzLAbvnFQ7" target="_blank" rel="noopener">
-        Googleマップで開く（冨塚ルーム）
+        Googleマップで開く（富塚ルーム）
       </a>
     </p>
   </div>
@@ -382,7 +393,6 @@
         <p class="contact-intro">ご相談やご質問がございましたら、お気軽にお問い合わせください。</p>
 
         <section id="faq" class="faq">
-          <div class="container">
             <h3>よくある質問（Q&amp;A）</h3>
 
             <!-- 学習塾カテゴリ -->
@@ -420,9 +430,8 @@
               <h4>Q. 心理療法・心理検査は受けられますか？</h4>
               <p>A. 可能です。必要性は臨床心理士が判断します。病院ではないため保険適用外です。</p>
             </div>
-          </div>
         </section>
-
+        <section id="contact-direct" class="contact-direct">
         <div class="contact-buttons">
           <a href="https://www.facebook.com/kisoya1999/" target="_blank" class="btn btn-facebook">
             <i class="fab fa-facebook-f"></i> Facebookでフォロー
@@ -451,6 +460,7 @@
         </div>
       </div>
     </section>
+  </section>
   </main>
 
   <footer>
@@ -466,10 +476,9 @@
         <div class="footer-links">
           <ul>
             <li><a href="#home">ホーム</a></li>
-            <li><a href="#activities">活動内容</a></li>
-            <li><a href="#services">サービス詳細</a></li>
+            <li><a href="#services">活動内容</a></li>
             <li><a href="#access">アクセス</a></li>
-            <li><a href="#contact">お問い合わせ</a></li>
+            <li><a href="#contact-direct">お問い合わせ</a></li>
           </ul>
         </div>
       </div>
